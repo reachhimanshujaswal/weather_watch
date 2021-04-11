@@ -1,0 +1,119 @@
+.app-bar {
+  align-items: center;
+  z-index: 1251 !important;
+  background-color: rgb(27, 105, 207) !important;
+}
+.app-drawer {
+  z-index: 1250 !important;
+}
+div.app-drawer {
+  width: 280px;
+}
+.main {
+  text-align: center;
+}
+div.search {
+  display: inline-flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+div.weather {
+  display: inline-block;
+  padding-right: 30px;
+  padding-bottom: 25px;
+}
+.autocomplete {
+  width: 500px;
+}
+.card-popup-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+div.popup-main {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 600px;
+  font-family: Roboto, Helvetica, Arial, "sans-serif";
+}
+div.popup-left {
+  flex: 3;
+  margin: 0;
+  color: white;
+  padding: 15px 10px 15px 10px;
+  background: rgb(27, 105, 207);
+  text-align: center;
+}
+.popup-left-primary {
+  font-size: 70px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+.popup-left-secondary {
+  font-size: 26px;
+  font-weight: bold;
+}
+div.popup-right {
+  flex: 4;
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 10px;
+  background: black;
+  color: white;
+  text-align: left;
+  font-size: 18px;
+}
+.card {
+  display: flex;
+  width: 400px;
+  background: #1b69cf;
+  font-family: Roboto, Helvetica, Arial, "sans-serif";
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(27, 105, 207) 65%,
+    rgb(212 229 249) 95%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    rgb(27, 105, 207) 65%,
+    rgb(212 229 249) 95%
+  );
+  background: linear-gradient(
+    to right,
+    rgb(27, 105, 207) 65%,
+    rgb(212 229 249) 95%
+  );
+}
+.card-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 325px;
+  color: white;
+  padding-right: 3px;
+}
+.card-left-main {
+  font-size: 25px;
+  margin: 0px;
+}
+.icon-button {
+  width: 24px;
+  height: 24px;
+}
+.icon-button-div {
+  text-align: right;
+  padding-bottom: 35%;
+}
+.img-weather {
+  width: 65px;
+  height: 65px;
+}
+.card-right {
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+}
