@@ -2,7 +2,7 @@
 
 Weather Watch is a react app which uses OpenWeather and GeoDB Cities APIs to get the latest weather updates.
 
-Preview available at https://codesandbox.io/embed/quizzical-hugle-c1i5p?fontsize=14&hidenavigation=1&theme=dark&view=preview
+Preview available at https://c1i5p.sse.codesandbox.io/
 
 ## Features
 
