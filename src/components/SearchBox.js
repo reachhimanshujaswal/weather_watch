@@ -29,13 +29,14 @@ export default function SearchBox(props) {
     // Only invoke API for a new search, if character is deleted or
     // search criteria is too wide and API is returning max number of suggestions
     if (
-      value.length > 0 &&
+      value.length > 0 && valueRef.current.value.length>0 &&
       (options.length === 0 ||
         (optionTotalCount >= app.SUGGESTION_LIMIT &&
           searchText.length !== value.length) ||
-        searchText.length > value.length)
-    ) {
+        searchText.length > value.length)) 
+    {
       setLoading(true);
+      
       var rapidOptions = {
         method: "GET",
         url: "https://wft-geo-db.p.rapidapi.com/v1/geo/cities",
@@ -70,8 +71,8 @@ export default function SearchBox(props) {
     if (value.length === 0) setOptions([]);
   };
 
-  const handleInputChangeDebounced = debounce(1100, false,handleInputChange);
-
+  const handleInputChangeDebounced =  React.useCallback(debounce(1000, false,handleInputChange),[]);
+  
   return (
       <div>
     <Autocomplete
